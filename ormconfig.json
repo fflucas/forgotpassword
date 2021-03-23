@@ -1,0 +1,32 @@
+{
+   "type": "mysql",
+   "host": "localhost",
+   "port": 3306,
+   "username": "root",
+   "password": "dev2021",
+   "database": "Forgot_Password",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "src/models/**/*.ts"
+   ],
+   "migrations": [
+      "src/migrations/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "seeds": [
+      "src/database/seeds/**/*.ts"
+   ],
+   "factories": [
+      "src/database/factories/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/models",
+      "migrationsDir": "src/migrations",
+      "subscribersDir": "src/subscriber",
+      "seeds": "src/seeds",
+      "factories": "src/factories"
+   }
+}
